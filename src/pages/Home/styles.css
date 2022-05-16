@@ -1,0 +1,246 @@
+
+
+:root{
+    --color-black:#184E77;
+    --color-dark:#1E6091;
+    --color-blue:rgb(23, 23, 230);
+    --color-light:#1A759F;
+    --color-nav:#000042;
+    --color-light2:#34A0A4;
+    --color-text:#ebf2fa;
+    --border-card-radius: 10px;
+}
+/**GAME CONTENT STYLING**/
+h1,h2,h3,h4,h5,h6,p{
+    color: var(--color-text);
+   margin: .2rem 0;
+
+}
+.container{
+    background-color: var(--color-black);
+    padding-top: 3rem;
+}
+
+.container nav{
+    background-color: var(--color-nav);
+    width: 100%;
+    display: flex;
+    position: fixed;
+   top:0;
+   z-index: 1;
+   justify-content: flex-start;
+   gap:2rem;
+   padding: 0.75rem;
+}
+nav form input[type="text"]{
+ border-radius: 0.5rem;
+ background: var(--color-text);
+ padding: 0.75rem;
+ margin-right: 0.75rem;
+   
+}
+
+nav form input[type="text"]:focus{
+  
+    border: 1px solid #184E77;
+}
+
+/** navigation button**/
+
+nav button{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 0.5rem;
+    background: var(--color-blue);
+    color: var(--color-text);
+    transition: all 100ms;
+}
+button:hover{
+    transform: scale(1.1);
+    opacity: 0.75;
+}
+
+
+
+
+/**** filter container **/
+.filterContainer{
+    height: 1.5rem;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.filterContainer label{
+    color: var(--color-text);
+}
+.filterContainer select{
+    height: 1.5rem;
+    border-radius: 2rem;
+    margin-left: 1rem;
+    background-color: var(--color-nav2);
+    color: var(--color-text);
+    padding-left: 0.5rem;
+   
+}
+.filterContainer select:focus{
+    border: 1px solid var(--color-text);
+    color:rgba(0, 0, 0, 0.24);
+}
+
+.filterContainer select option{
+    background-color: var(--color-nav2);
+}
+
+
+
+
+
+/***game details**/
+.container .card-container{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+   
+    margin-top:5em;
+}
+
+.container .card{
+    width: 22vw;
+    height: fit-content;
+    background: var(--color-light);
+    color: var(--color-text);
+    border-radius: var(--border-card-radius);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+    transition: all 100ms;
+    }
+
+.container .card:hover{
+    transform: scale(1.05);
+    opacity: 0.75;
+}
+
+
+.container .gamelist{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+row-gap:1rem;
+column-gap:1rem;
+padding-right: 5rem;
+}
+    .card img{
+        display: block;
+        width: 100%;
+        height: 50%;
+        aspect-ratio: 2/1;
+    }
+    
+    .card .gameinfo{
+        margin-left:0.5rem;
+        margin-right:0.5rem;
+        margin-top:0;
+
+    }
+    .card .gameinfo .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:0.2rem;
+    }
+.title h5{
+    background: var(--color-blue);
+    padding:0.4rem;
+    border-radius: 0.5rem;
+}
+    .card .gameinfo .bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        top:0;
+    }
+    .card .gameinfo .genre{
+        background: var( --color-black);
+        padding:0.4rem;
+        border-radius: 0.5rem;
+    }
+
+
+/*RESPOONSIVE LAYOUT*/
+
+/*FoR small devices*/
+
+@media screen and (max-width:860px){
+    .container .card{
+        width: 92%;
+        margin-bottom: 2rem;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+    .card-container{
+        margin-top: 5rem;
+        padding-top: 2rem;
+    }
+    .container .gamelist{
+        /* grid-template-columns: 1fr;
+        padding-right: 0rem; */
+        display: block;
+        padding:0.8rem;
+        
+    }
+    .filterContainer{ 
+        display: block;
+        margin-bottom: 4rem;
+        margin-left: 1rem;
+    }
+    .filterContainer div:nth-of-type(n){
+        margin-top: .2rem;
+    }
+.container .card-container{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+   
+    margin-top:5em;
+}
+
+ }
+
+
+@media screen and (max-width:1200px){
+    .container .card{
+        width: 96%;
+    } 
+    .container .gamelist{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0.8rem;
+    }
+    
+.container .card-container{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+   
+    margin-top:5em;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
