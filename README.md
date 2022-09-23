@@ -4,7 +4,7 @@
 * the web application provides you with the list of games free windows and broswer games
 * also contains the link to each game
 
-##LIVE PREVIEW
+## LIVE PREVIEW
 [click here](https://games-web-application.netlify.app/)
 
 ## Screenshots
