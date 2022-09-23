@@ -4,6 +4,9 @@
 * the web application provides you with the list of games free windows and broswer games
 * also contains the link to each game
 
+##LIVE PREVIEW
+[click here](https://games-web-application.netlify.app/)
+
 ## Screenshots
 
 <img src='https://ik.imagekit.io/x761p7oyp/games-app/Screenshot__196__DlqmAo1Sj.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663270815666' alt='screenshot' />
